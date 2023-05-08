@@ -15,26 +15,44 @@
         #navbar1{
             /* border: 1px solid red; */
             width: 100%;
-            height: 50px;
+            height: 60px;
             display: flex;
             background-color: black;
+            justify-content: space-evenly;
         }
         #logo{
             /* border: 1px solid blue; */
-            width: 15%;
-            height: 50px;
+            color: white;
+            margin-left: 15px;
+            margin-bottom: 40px;
+            
         }
         #location{
             /* border: 1px solid blue; */
             width: 15%;
             height: 50px;
             display: flex;
+            color: white;
+            margin-top: 15px;
+        }
+        #loc{
+            margin-top: 15px;
         }
         #searchbar{
             /* border: 1px solid blue; */
             width: 35%;
             height: 50px;
             display: flex;
+            margin-top: 5px;
+        }
+        #preferences{
+            width: 50px;
+            background-color:rgb(194, 191, 191) ;
+            color: black;
+        }
+        #search-btn{
+            width: 50px;
+            background-color: rgb(235, 220, 15);
         }
         #language{
             /* border: 1px solid blue; */
@@ -45,16 +63,22 @@
             /* border: 1px solid blue; */
             width: 15%;
             height: 50px;
+            margin-top: 15px;
+            color: white;
         }
         #RO{
             /* border: 1px solid blue; */
             width: 10%;
             height: 50px;
+            margin-top: 15px;
+            color: white;
         }
         #cart{
             /* border: 1px solid blue; */
             width: 5%;
-            height: 50px;
+            height: 25px;
+            margin-top: 25px;
+            display: flex;
         }
         #navbar2{
             width: 100%;
@@ -64,24 +88,32 @@
             display: flex;
             justify-content: space-around;
         }
+        #categories{
+            width:100% ;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+
+        }
     </style>
 </head>
 <body>
     <div id="screen">
         <div id="navbar1">
             <div id="logo">
-                <img src="Amazon-Emblem.jpg" height="50px"; width="180px"/>
+                <h1>amazon.in</h1>
             </div>
-            <div id="location" style="color: white
-            ;">
-                <div><i class="fa-solid fa-location-dot"></i></div>
+            <div id="location" >
+                <div id="loc">
+                    <i class="fa-solid fa-location-dot"></i></div>
                 <div>
                 <div>Hello</div>
                 <div>Select your Address</div>
                 </div>
             </div>
             <div id="searchbar">
-            <select style="width: 50px;background-color: rgb(194, 191, 191);color: black;">
+            <select id="preferences" >
                 <option>All</option>
                 <option>Alexa Skills</option>
                 <option>Amazon Devices</option>
@@ -95,8 +127,10 @@
                 <option>Books</option>
                 <option>Car & Motorbike</option>
             </select>
-            <input placeholder="Search Amazon.in" style="background-color: white;width: 350px;"/>
-            <input type="button" style="width: 60px;background-color: yellow;"/>
+            <input id="search" placeholder="Search Amazon.in" style="background-color: white;width: 350px;"/>
+            <button id="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
             </div>
             <div id="language">
                 <select style="width: 65px;height: 50px;background-color: black;color: white;border: none;">
@@ -109,20 +143,12 @@
                 </select>
             </div>
             <div id="signin">
-                <div style="color: white;">Hello,sign in</div>
-                <div>
-                    <select style="background-color: black;color: white;border: none;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: medium;">
-                        <option>Accounts & Lists</option>
-                        <option>Your Account</option>
-                        <option>Your Orders</option>
-                        <option>Your Wishlist</option>
-                        <option>Your Recommendations</option>
-                    </select>
-                </div>
+                <div>Hello,sign in</div>
+                <div><b>Accounts & Lists</b></div>
             </div>
             <div id="RO">
-                <div style="background-color: black ;color: white;">Returns</div>
-                <div style="background-color:black ;color: white;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: medium;">& Orders</div>
+                <div>Returns</div>
+                <div><b>& Orders</b></div>
             </div>
             <div id="cart">
                 <div style="background-color: black; color: white;"><i class="fa-solid fa-cart-shopping"></i></div>
@@ -130,6 +156,7 @@
             </div>
         </div>
         <div id="navbar2">
+           <div id="categories">
             <div>All</div>
             <div>Amazon miniTV</div>
             <div>Sell</div>
@@ -139,16 +166,13 @@
             <div>Customer Service</div>
             <div>Electronics</div>
             <div>New Releases</div>
-            <div>
-                <select style="background-color: rgb(63, 61, 61); color: white;border: none;">
-                    <option>Prime</option>
-                </select>
-            </div>
+            <div>Prime</div>
             <div>Home & Kitchen</div>
             <div style="display: flex;">
                 <div><i class="fa-regular fa-sun"></i></div>
-                <div style="background-color: rgb(63, 61, 61);color: white;font-size: larger;">Great Summer Sale Live Now</div>
+                <div style="background-color: rgb(63, 61, 61);color: white;font-size: larger; height: 20px;">Great Summer Sale Live Now</div>
             </div>
+           </div> 
         </div>
         <div id="body"></div>
     </div>
