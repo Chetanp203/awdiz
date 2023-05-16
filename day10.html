@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 Responsivness</title>
+    <style>
+        #parent{
+            border: 2px solid blue;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+        }
+        #parent>div{
+            width: 30%;
+            height: 150px;
+            border: 2px solid red;
+        }
+        #parent>div>div{
+            border: 2px solid green;
+            width: 100%;
+        }
+        @media screen and (max-width:400px){
+            #parent {
+                border: 2px solid purple;
+                flex-direction: column;
+                text-align: center;
+            }
+            #parent>div{
+                border: 2px solid blue;
+                width: 80%;
+                display: flex;
+                margin:auto;
+                margin-bottom: 10px;
+            }
+            #parent>div>div{
+                border: 2px solid yellow;
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div>
+            <div>A-1</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+        <div>
+            <div>A-2</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+        <div>
+            <div>A-3</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+    </div>
+</body>
+</html>
