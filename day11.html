@@ -10,24 +10,38 @@
         *{
             padding: 0;
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
         #screen{
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 100%;
             /* height: 500px; */
+
         }
         #navbar{
             width: 100%;
             height: 60px;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             display: flex;
             justify-content: space-between;
+            background-color: rgb(36,41,47);
+            color: white;
+        }
+        #logo{
+            width: 30px;
+            height: 30px;
+        }
+        #searchbar{
+            width: 90%;
+            background-color:rgb(36,41,47) ;
+            height: 20px;
+            margin-top: 10px;
         }
         #navbar>div:nth-child(1){
             display: none;
         }
         #navbar>div:nth-child(2){
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             width: 60%;
             display: flex;
             justify-content: space-between;
@@ -35,22 +49,22 @@
         #navbar>div:nth-child(2)>div:nth-child(1){
             /* color: red; */
             width: 10%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         #navbar>div:nth-child(2)>div:nth-child(2){
             /* color: red; */
             width: 40%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         #navbar>div:nth-child(2)>div:nth-child(3){
             /* color: red; */
             width: 44%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             display: flex;
             justify-content: space-between;
         }
         #navbar>div:nth-child(3){
-            border: 1px solid green;
+            /* border: 1px solid green; */
             width: 8%;
             display: flex;
             justify-content: space-between;
@@ -58,7 +72,7 @@
         #body{
             width: 100%;
             height: 400px;
-            border: 1px solid purple;
+            /* border: 1px solid purple; */
         }
         @media screen and (max-width: 416px){
             #navbar>div:nth-child(2)>div:nth-child(2){
@@ -82,8 +96,13 @@
         <div id="navbar">
             <div>1</div>
             <div>
-                <div>logo</div>
-                <div>search</div>
+                <div id="logo">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png">
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchbar" placeholder="search or jump to..."/>
+                </div>
                 <div>
                     <p>Pull request</p>
                     <p>Issues</p>
