@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/280c326eb5.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +19,73 @@
             border: 2px solid yellow; */
         }
 
-        /* #navbar {
+        #navbar {
             width: 100%;
-            height: 400px;
-            background-image: url('./babel.png');
-        } */
+            height: 80px;
+           /* border: 1px solid red; */
+           display: flex;
+           justify-content: space-around;
+
+        }
+        #logo{
+            /* border: 1px solid blue; */
+            width: 5%;
+            margin-left: 25px;
+
+        }
+        #navbar>div:nth-child(1)>img{
+            width: 100%;
+            padding-top: 10px;
+
+        }
+        #navigation{
+            /* border: 1px solid blue; */
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            
+
+        }
+        #navbar>div:nth-child(2)>p{
+            padding-top: 25px;
+        }
+        #searchbar{
+            /* border: 1px solid blue; */
+            width: 25%;
+            margin-left: 70px;
+
+        }
+        #navbar>div:nth-child(3)>input{
+            background-color:rgb(245,245,246) ;
+            width: 85%;
+            height: 40px;
+            margin-bottom: 40px;
+            border: none;
+            border-radius: 0px 5px 5px 0px;
+            
+        }
+        #navbar>div:nth-child(3)>button{
+            background-color:rgb(245,245,246) ;
+            width: 13%;
+            height: 40px;
+            margin-top: 15px;
+            color: black;
+            border: none;
+            border-radius: 5px 0px 0px 5px;
+            
+        }
+
+        #tools{
+            /* border: 1px solid blue; */
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        #navbar>div:nth-child(4)>div{
+            text-align: center;
+            margin-top: 20px;
+        }
 
         #body {
             width: 100%;
@@ -91,7 +154,40 @@
 
 <body>
     <div id="screen">
-        <div id="navbar"></div>
+        <div id="navbar">
+            <div id="logo">
+                <img src="myntra-Logo-PNG-768x768.jpg"/>
+            </div>
+            <div id="navigation">
+                <p>MEN</p>
+                <p>WOMEN</p>
+                <p>KIDS</p>
+                <p>HOME & LIVING</p>
+                <p>BEAUTY</p>
+                <p>STUDIO</p>
+            </div>
+            <div id="searchbar">
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #7d7d7d;"></i>
+
+                </button>
+                <input id="search" placeholder="search for products,brands and more"/>
+            </div>
+            <div id="tools">
+                <div>
+                <i class="fa-regular fa-user" style="color: #121212;"></i>
+                <p>Profile</p>
+                </div>
+                <div>
+                <i class="fa-regular fa-heart" style="color: #171717;"></i>
+                <p>Wishlist</p>
+                </div>
+                <div>
+                    <i class="fa-light fa-bag-shopping" style="color: #1a1a1a;"></i>
+                <p>Bag</p>
+                </div>
+            </div>
+        </div>
         <div id="body">
             <div>
                 <div>
